@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../public/css/reset.css">
+        <link rel="stylesheet" href="../../public/css/style.css">
+        <title>Dumblr</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div>
+                <header><h1>Dumblr</h1></header>
+                <h4>It's like Tumblr but for devs.</h4>
+            </div>
+
+            <nav class="navlinks">
+                <ul>
+                    <li><a>Profile</a></li>
+                    <li><a>Logout</a></li>
+                </ul>
+                <!-- 
+                <ul>
+                {{#if logged_in}}
+                <li><a href="/profile">profile</a></li> |
+                <button class="no-button" id="logout">logout</button>
+                {{else}}
+                <li><a href="/login">login</a></li>
+                {{/if}}
+                </ul>
+                -->
+            </nav>
+        </div>
+
+        <hr>
+
+        <div>
+            {{{body}}}
+        </div>
+
+        <!--{{#if logged_in}}
+        <script src="/js/logout.js"></script>
+        {{/if}}-->
+    </body>
+</html>
