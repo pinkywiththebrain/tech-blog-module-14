@@ -18,8 +18,8 @@
             <nav class="navlinks">
                 <ul>
                     <li><a href="/homepage">homepage</a></li>
-                    {{#if logged_in}}
                     <li><a href="/profile">profile</a></li>
+                    {{#if logged_in}}
                     <button class="no-button" id="logout">logout</button>
                     {{else}}
                     <li><a href="/login">login</a></li>

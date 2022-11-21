@@ -47,3 +47,21 @@ header {
 .navlinks li a {
     text-decoration: none;
 }
+
+.card {
+    background-color: var(--white);
+    color: black;
+    padding: 0px 15px;
+    margin: 15px 0px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: var(--white);
+}
+
+.post-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}

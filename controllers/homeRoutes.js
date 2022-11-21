@@ -1,16 +1,17 @@
 const router = require('express').Router();
-const { Post, User } = require('../models');
+const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
     const postData = await Post.findAll({
+      attributes: ['id', 'title', 'text', 'date_created'],
       include: [
         {
           model: User,
-          attributes: ['name'],
-        },
+          attributes: ['username'],
+        }
       ],
     });
 
@@ -26,3 +27,7 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+
+
+module.exports = router;
