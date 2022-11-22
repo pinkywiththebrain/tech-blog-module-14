@@ -46,6 +46,7 @@ header {
 
 .navlinks li a {
     text-decoration: none;
+    color: var(--white);
 }
 
 .card {
@@ -64,4 +65,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.form {
+    padding: 0px 0px 15px 0px;
 }
