@@ -67,6 +67,23 @@ header {
     align-items: center;
 }
 
-.form {
+.new-post {
     padding: 0px 0px 15px 0px;
+}
+
+.form {
+    padding: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-card {
+    border-style: solid;
+    border-color: var(--white);
+    border-radius: 10px;
+    background-color: var(--white);
+    color: black;
+    padding: 20px
 }
